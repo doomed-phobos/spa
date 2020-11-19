@@ -4,13 +4,7 @@
 
 namespace spa
 {
-   class SpaFile
-   {
-   public:
-      SpaFile(const char filename[]);
-   };
-
-   std::string get_extension(const std::string& filename);
+   std::string get_file_extension(const std::string& filename);
 } // namespace spa
 
 

@@ -5,10 +5,17 @@
 
 int main(int argc, char* argv[])
 {
-   spa::SpaFile spafile = spa::Translator::Decode(argv[1]);
+   try {
+      spa::Translator translator(argv[1]);
+   }catch(std::exception& exception) {
+      puts(exception.what());
+   }catch(int id) {
+      if(id == SPA_MENU_THROW_ID) {
+         puts("MENU HELP!");
+      }
+   }
 
    return 0;
 }
 
-//TODO: Create SpaFile class, which reads *.spa
-//TODO: Create a exception, which displays a message within the console
+//TODO: Crear el interpretador del "lenguaje"

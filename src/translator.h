@@ -1,5 +1,6 @@
 #ifndef SPA_TRANSLATOR_H
 #define SPA_TRANSLATOR_H
+#include <string>
 
 namespace spa
 {
@@ -11,7 +12,11 @@ namespace spa
    class Translator
    {
    public:
-      static SpaFile Decode(const char filename[]);
+      Translator(const char filename[]);
+
+      void intersprets();
+   private:
+      std::string m_filename;
    };
 } // namespace spa
 

@@ -3,5 +3,6 @@
 
 #include "translator.h"
 #include "file.h"
+#include "vars.h"
 
 #endif
