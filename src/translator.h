@@ -14,7 +14,7 @@ namespace spa
    public:
       Translator(const char filename[]);
 
-      void intersprets();
+      void interpret();
    private:
       std::string m_filename;
    };

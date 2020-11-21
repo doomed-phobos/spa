@@ -7,6 +7,8 @@ int main(int argc, char* argv[])
 {
    try {
       spa::Translator translator(argv[1]);
+
+      translator.interpret();
    }catch(std::exception& exception) {
       puts(exception.what());
    }catch(int id) {

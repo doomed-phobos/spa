@@ -4,5 +4,7 @@
 #include "translator.h"
 #include "file.h"
 #include "vars.h"
+#include "exception.h"
+#include "string.h"
 
 #endif
